@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Login</title>
+</head>
+<body style="background-color:#7e8293">
+    <h3 class="text-center">Login</h3><br>
+    <div class="text-center">
+  <form id="form_id" class="form-inline mb-3" action="/user/post" method="post">
+    <label>Email id</label><br>
+    <input type="text" name="Email" id="email_id"><br><br>
+    <label>Password</label><br>
+    <input type="password" name="Password" id="password_id"><br><br>
+    <div class="text-center">
+        <input type="submit" class="btn btn-success" value ="Login ">
+        <button  class="btn btn-success" onclick="window.open('forgotPassword.html','_self');">Forgeot password</button><br><br>
+        <a  href="signUp.html" >new user</a>
+        
+
+      </div>
+  </form> 
+    </div>  
+   
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+        <script src="login.js"></script>
+</body>
+</html>

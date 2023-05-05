@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Expense Tracker</title>
+  <body style="background-color:#4e6910">
+    <header id="main-header" >
+        
+          <div class="row">
+            <div class="  xtext-white p-3 text-center">
+                <h1 id="header-title">Expense Track</h1>
+            </div></div></header>
+            <h3 id="h3"></h3>
+            <button  class="btn btn-warning exteme-right" id="razorButton">Buy Premium</button>
+            <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+            <div class="container">
+                <div id="main">
+                    <form id="addValue">
+                        <label>Expense Amount</label><br>
+                        <input type="number"  name="amt" id="amount"><hr><br>
+                        <label>Description</label><br>
+                        <input type="text" name ="dsc" id="des"><br><br>
+                        <label>Category</label><br>
+                        <select name="ctg" id="cat">
+                          <option value="Food">Food</option>
+                          <option value="Petrol">Petrol</option>
+                          <option value="Salary">Salary</option>
+                        </select>
+                        <div class="text-center">
+                            <input type="submit" class="btn btn-success" value ="Add details ">
+                            
+                          </div>
+                       </form>
+
+                       
+                       <h2 class="title">Details</h2>
+        <ul id="items" class="list-group"> 
+        </ul> 
+                </div>
+                <div class="text-center">
+                <form id="itemsPerPage" style="color:rgb(21, 52, 123)"><label>item-per-page</label><br><input type="number" style="width: 50px;" id="inputperpage"><button type="submit" >Add</button></form>
+
+            
+              <button id="previous" disabled>❮</button>
+              <button id="current" value="1">1</button>
+              <button id="next">❯</button>
+          </div>
+            <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.4/axios.min.js"></script>
+            <script src="expenseTracker.js"></script>
+</body>
+</head></html>
